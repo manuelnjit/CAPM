@@ -36,7 +36,7 @@ class CAPM:
     
     def CAPM(self):                      # Capital Asset Pricing Model 
                                          # Ross, Westerfield, Jaffe, Jordan
-        rf = 0.07 # 2 Month Treasury Yield Curve Rate
+        rf = 0.0007 # 2 Month Treasury Yield
         # using S&P 500 index as market
         market = data.DataReader('^GSPC', data_source='yahoo',   
                         start=date.today()-timedelta(days=int(self.period)),            
